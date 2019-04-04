@@ -1,10 +1,9 @@
 hemes/next/dist: xenial
 language: node_js
 addons:
-  ssh_known_hosts: $UBUNTU
+ssh_known_hosts: $UBUNTU
 node_js:
   - node
-  - 10.15.0
 cache: npm
 branches:
 only:
