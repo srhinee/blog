@@ -84,4 +84,4 @@ deploy:
   user: root #用户名
   port: 22 #端口号
   remotePath: /root/blog
-  privateKey: ~/.ssh/id_rsa #指定私钥路径
+  privateKey: /home/travis/.ssh/id_rsa #指定私钥路径
