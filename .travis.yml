@@ -1,7 +1,6 @@
-hemes/next/dist: xenial
 language: node_js
 addons:
-  ssh_known_hosts: $UBUNTU
+  ssh_known_hosts: 58.87.87.24
 node_js:
   - node
 cache: npm
