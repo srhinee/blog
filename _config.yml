@@ -80,8 +80,8 @@ theme: diaspora
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
   type: sftp
-  host: 58.87.87.24 #ip地址
+  host: $UBUNTU #ip地址
   user: root #用户名
   port: 22 #端口号
-  remotePath: /home/ubuntu/blog
-  privateKey: /home/shrine/.ssh/id_rsa #指定私钥路径
+  remotePath: /root/blog
+  privateKey: ~/.ssh/id_rsa #指定私钥路径
