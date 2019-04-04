@@ -1,0 +1,45 @@
+hemes/next/dist: xenial # Ubuntu 16.04
+
+language: node_js
+
+node_js:
+  - "node"
+  - "10.15.0"
+
+cache: npm
+
+branches:
+only: # 指定分支提交时才会运行travis ci
+  - dev
+
+before_install:
+  - npm install -g hexo-cli
+
+install:
+  - git submodule update --init --recursive
+  - npm install
+
+# Notice: Replace 'YOUR NAME' and 'YOUR EMAIL'
+before_script:
+  - git config --global user.name $USER_NAME
+  - git config --global user.email $USER_EMAIL
+
+script:
+  - pwd
+  - hexo clean
+  - hexo generate
+  - hexo algolia # 用于algolia搜集信息
+
+after_success:
+#  - sed -i'' "s~https://github.com/zjZSTU/zjzstu.github.com.git~https://${GITHUB_REPO_TOKEN}@github.com/zjZSTU/zjzstu.github.com.git~" _config.yml
+  - hexo deploy
+
+# deploy:
+#   local-dir: ./blogs/public
+#   provider: pages
+#   skip-cleanup: true
+#   github-token: $GITHUB_REPO_TOKEN  # Set in the settings page of your repository, as a secure variable
+#   keep-history: true
+#   target-branch: master
+#   on:
+#     branch: dev
