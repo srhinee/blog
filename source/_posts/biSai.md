@@ -1,8 +1,18 @@
-# 小程序比赛开发规划
-
-标签（空格分隔）： 比赛
 
 ---
+title: 小程序比赛
+date: 2019-03-22 18:38:45
+categories: 
+    - 比赛
+tags: 
+    - 比赛
+cover: http://cloud.wakefulness.cn/blog/biSai.jpg
+
+---
+
+
+
+
 ## 0. 任务分工及项目介绍
  <i class="icon-star" style="color:green">美工</i> <i class="icon-star" style="color:red">前端</i> <i class="icon-star" style="color:blue">后端</i>
  
