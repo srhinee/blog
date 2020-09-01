@@ -21,13 +21,9 @@ before_script:
 - git config --global user.name $USER_NAME
 - git config --global user.email $USER_EMAIL
 script:
-- pwd
 - hexo clean
 - hexo generate
 - hexo algolia
 after_success:
-- ll ~/.ssh/
-- cat ~/.ssh/id_rsa
-- whoami
 - hexo deploy
 
