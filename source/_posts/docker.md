@@ -5,7 +5,7 @@ categories:
     - docker
 tags: 
     - docker
-cover: http://cloud.wakefulness.cn/blog/A1.jpg
+cover: https://da-xi-gua-1253809426.cos.ap-beijing.myqcloud.com/blog/A1.jpg
 ---
 #dcoker
  - cp 相互拷贝文件 后面被前面覆盖 

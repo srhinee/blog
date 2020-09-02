@@ -8,8 +8,8 @@ subtitle:
 description:
 keywords:
 author: samsara
-language:
-timezone:
+language: zh-CN
+timezone: Asia/Shanghai
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
@@ -80,7 +80,7 @@ theme: diaspora
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
   type: sftp
-  host: 58.87.87.24 #ip地址
+  host: $UBUNTU #ip地址
   user: root #用户名
   port: 22 #端口号
   remotePath: /root/blog

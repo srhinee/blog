@@ -6,7 +6,7 @@ categories:
     - 比赛
 tags: 
     - 比赛
-cover: http://cloud.wakefulness.cn/blog/biSai.jpg
+cover: https://da-xi-gua-1253809426.cos.ap-beijing.myqcloud.com/blog/biSai.jpg
 
 ---
 

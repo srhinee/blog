@@ -5,7 +5,7 @@ categories:
     - linux
 tags: 
     - linux
-cover: http://cloud.wakefulness.cn/blog/A2.jpg
+cover: https://da-xi-gua-1253809426.cos.ap-beijing.myqcloud.com/blog/A2.jpg
 ---
 ###FTP
   + /etc/vsftpd.conf 是配置 不能同时配ip4和6 否则无法启动服务
