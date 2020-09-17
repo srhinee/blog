@@ -2,7 +2,7 @@ language: node_js
 #addons:
 #  ssh_known_hosts: $UBUNTU
 node_js:
-- node10
+- node
 #cache: npm
 branches:
   only:
@@ -15,12 +15,12 @@ before_install:
 - ssh-add ~/.ssh/id_rsa
 
 install:
-- nvm install -g hexo-cli
+- npm install -g hexo-cli
 - git submodule update --init --recursive
 - cat package.json
 - ls node_modules
 - rm -rf node_modules
-- nvm install
+- npm install
 before_script:
 - git config --global user.name $USER_NAME
 - git config --global user.email $USER_EMAIL
