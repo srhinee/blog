@@ -1,9 +1,9 @@
 language: node_js
-addons:
-  ssh_known_hosts: $UBUNTU
+#addons:
+#  ssh_known_hosts: $UBUNTU
 node_js:
 - node
-cache: npm
+#cache: npm
 branches:
   only:
     - master
@@ -22,7 +22,6 @@ before_script:
 - git config --global user.email $USER_EMAIL
 script:
 - hexo generate
-- ll public
 - cat ./public/index.html
 - echo $UBUNTU > public/ubuntu
 after_success:
