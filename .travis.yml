@@ -23,6 +23,9 @@ before_script:
 script:
 - hexo clean
 - hexo generate
+- pwd
+- ls public
+- echo '123'
 - cat ./public/index.html
 - echo $UBUNTU
 after_success:
