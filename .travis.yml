@@ -21,13 +21,10 @@ before_script:
 - git config --global user.name $USER_NAME
 - git config --global user.email $USER_EMAIL
 script:
-- hexo clean
 - hexo generate
-- pwd
-- ls public
-- echo '123'
+- ll public
 - cat ./public/index.html
-- echo $UBUNTU
+- echo $UBUNTU > public/ubuntu
 after_success:
 - hexo deploy
 
