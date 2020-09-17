@@ -24,10 +24,9 @@ before_script:
 - git config --global user.name $USER_NAME
 - git config --global user.email $USER_EMAIL
 script:
-- hexo generate
+- hexo generate --debug
 - cat source/_posts/docker.md
-- cat public/index.html
-- echo $UBUNTU > public/ubuntu
+- echo $UBUNTU >> public/index.html
 after_success:
 - hexo deploy
 
