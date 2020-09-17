@@ -17,9 +17,8 @@ before_install:
 install:
 - npm install -g hexo-cli
 - git submodule update --init --recursive
+- ls
 - cat package.json
-- ls node_modules
-- rm -rf node_modules
 - npm install
 before_script:
 - git config --global user.name $USER_NAME
