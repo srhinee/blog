@@ -2,9 +2,8 @@ language: node_js
 #addons:
 #  ssh_known_hosts: $UBUNTU
 node_js:
-- '10.16.3'
 - '11'
-- '14'
+# - '14' 生成index为空
 #cache: npm
 branches:
   only:
@@ -26,7 +25,6 @@ before_script:
 script:
 - hexo generate --debug
 - cat public/index.html
-- echo $UBUNTU >> public/index.html
 after_success:
 - hexo deploy
 
