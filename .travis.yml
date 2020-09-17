@@ -13,9 +13,12 @@ before_install:
 - eval "$(ssh-agent -s)"
 - chmod 600 ~/.ssh/id_rsa
 - ssh-add ~/.ssh/id_rsa
-- npm install -g hexo-cli
+
 install:
+- npm install -g hexo-cli
 - git submodule update --init --recursive
+- cat package.json
+- rm -rf node_modules
 - npm install
 before_script:
 - git config --global user.name $USER_NAME
