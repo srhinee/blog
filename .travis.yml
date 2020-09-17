@@ -2,7 +2,9 @@ language: node_js
 #addons:
 #  ssh_known_hosts: $UBUNTU
 node_js:
-- node
+- '10.16.3'
+- '11'
+- '14'
 #cache: npm
 branches:
   only:
@@ -17,15 +19,13 @@ before_install:
 install:
 - npm install -g hexo-cli
 - git submodule update --init --recursive
-- ls
-- cat package.json
 - npm install
 before_script:
 - git config --global user.name $USER_NAME
 - git config --global user.email $USER_EMAIL
 script:
 - hexo generate --debug
-- cat source/_posts/docker.md
+- cat public/index.html
 - echo $UBUNTU >> public/index.html
 after_success:
 - hexo deploy
