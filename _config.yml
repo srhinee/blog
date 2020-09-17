@@ -3,7 +3,7 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Hexo
+title: Samsara's blog
 subtitle:
 description:
 keywords:
@@ -13,7 +13,7 @@ timezone: Asia/Shanghai
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: http://yoursite.com
+url: /
 root: /
 permalink: :year/:month/:day/:title/
 permalink_defaults:
@@ -23,7 +23,6 @@ source_dir: source
 public_dir: public
 tag_dir: tags
 archive_dir: archives
-category_dir: categories
 code_dir: downloads/code
 i18n_dir: :lang
 skip_render:
@@ -85,3 +84,11 @@ deploy:
   port: 22 #端口号
   remotePath: /root/blog
   privateKey: /home/travis/.ssh/id_rsa #指定私钥路径
+
+
+## 搜索
+search:
+  path: search.xml
+  field: post
+  format: html
+  limit: 10000
