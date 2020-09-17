@@ -23,6 +23,8 @@ before_script:
 script:
 - hexo clean
 - hexo generate
+- cat ./public/index.html
+- echo $UBUNTU
 after_success:
 - hexo deploy
 
